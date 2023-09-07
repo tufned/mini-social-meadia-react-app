@@ -1,0 +1,96 @@
+%flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+    
+.LogIn-page
+    height: 100vh
+    width: 100vw
+    @extend %flex 
+    justify-content: space-between
+
+    $LogIn-page_decor-margin: 20px
+    .LogIn-page_decor
+        height: calc( 70% - $LogIn-page_decor-margin )
+        width: calc( 40% - $LogIn-page_decor-margin )
+        padding: 15vh 0
+        margin: $LogIn-page_decor-margin
+        background-color: #4b4e8d
+        border-radius: 35px
+        @extend %flex
+        flex-direction: column
+        justify-content: start
+
+        .the-title
+            color: #fff
+            font-size: 40px
+            margin: 10% 0
+            text-align: center
+        .the-title-extra
+            color: #dde2e7
+        
+    
+    .LogIn-page_forms-shell
+        height: 100%
+        width: 60%
+        @extend %flex
+        flex-direction: column
+        position: relative
+
+        .swap-buts-area
+            width: 100%
+            position: absolute
+            top: 0
+            right: 0
+            display: flex
+            justify-content: end
+
+            $swap-but-border-rad: 20px
+            .swap-buts-shell
+                margin: 7% 10%
+                border-radius: $swap-but-border-rad
+                @extend %flex
+                position: relative
+                cursor: pointer
+                
+                .swap-but
+                    padding: 12px 20px
+                    // background-color: #fff
+                    border: 1px solid #d6d6d6
+                    color: #68707d
+                    font-size: 16px
+                .sign-in-but
+                    border-radius: $swap-but-border-rad 0 0 $swap-but-border-rad
+                    border-right-width: 0
+                .sing-up-but
+                    border-left-width: 0
+                    border-radius: 0 $swap-but-border-rad $swap-but-border-rad 0
+
+                .swap-but_active-layer
+                    background-color: #8bb9a1
+                    color: #fff
+                    position: absolute
+                    left: -5%
+                    height: 110%
+                    width: 55%
+                    border-radius: calc( $swap-but-border-rad + 5px )
+                    transition: .3s all ease
+                    @extend %flex
+                    font-size: 18px
+
+                .swap-but_active-layer__sign-up
+                    transform: translateX(100%)
+
+        .inputs-area
+
+        
+        .logIn-submit-but
+            padding: 12px 24px
+            background-color: #8bb9a1
+            border-radius: 10px
+            color: #fff
+            margin: 10px 0
+
+

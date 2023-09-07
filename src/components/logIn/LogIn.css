@@ -1,0 +1,85 @@
+.LogIn-page .LogIn-page_forms-shell .swap-buts-area .swap-buts-shell .swap-but_active-layer, .LogIn-page .LogIn-page_forms-shell .swap-buts-area .swap-buts-shell, .LogIn-page .LogIn-page_forms-shell, .LogIn-page .LogIn-page_decor, .LogIn-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogIn-page {
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+}
+.LogIn-page .LogIn-page_decor {
+  height: calc(70% - 20px);
+  width: calc(40% - 20px);
+  padding: 15vh 0;
+  margin: 20px;
+  background-color: #4b4e8d;
+  border-radius: 35px;
+  flex-direction: column;
+  justify-content: start;
+}
+.LogIn-page .LogIn-page_decor .the-title {
+  color: #fff;
+  font-size: 40px;
+  margin: 10% 0;
+  text-align: center;
+}
+.LogIn-page .LogIn-page_decor .the-title-extra {
+  color: #dde2e7;
+}
+.LogIn-page .LogIn-page_forms-shell {
+  height: 100%;
+  width: 60%;
+  flex-direction: column;
+  position: relative;
+}
+.LogIn-page .LogIn-page_forms-shell .swap-buts-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: end;
+}
+.LogIn-page .LogIn-page_forms-shell .swap-buts-area .swap-buts-shell {
+  margin: 7% 10%;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.LogIn-page .LogIn-page_forms-shell .swap-buts-area .swap-buts-shell .swap-but {
+  padding: 12px 20px;
+  border: 1px solid #d6d6d6;
+  color: #68707d;
+  font-size: 16px;
+}
+.LogIn-page .LogIn-page_forms-shell .swap-buts-area .swap-buts-shell .sign-in-but {
+  border-radius: 20px 0 0 20px;
+  border-right-width: 0;
+}
+.LogIn-page .LogIn-page_forms-shell .swap-buts-area .swap-buts-shell .sing-up-but {
+  border-left-width: 0;
+  border-radius: 0 20px 20px 0;
+}
+.LogIn-page .LogIn-page_forms-shell .swap-buts-area .swap-buts-shell .swap-but_active-layer {
+  background-color: #8bb9a1;
+  color: #fff;
+  position: absolute;
+  left: -5%;
+  height: 110%;
+  width: 55%;
+  border-radius: 25px;
+  transition: 0.3s all ease;
+  font-size: 18px;
+}
+.LogIn-page .LogIn-page_forms-shell .swap-buts-area .swap-buts-shell .swap-but_active-layer__sign-up {
+  transform: translateX(100%);
+}
+.LogIn-page .LogIn-page_forms-shell .logIn-submit-but {
+  padding: 12px 24px;
+  background-color: #8bb9a1;
+  border-radius: 10px;
+  color: #fff;
+  margin: 10px 0;
+}/*# sourceMappingURL=LogIn.css.map */
